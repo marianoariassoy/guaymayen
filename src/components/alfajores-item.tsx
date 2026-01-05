@@ -64,12 +64,12 @@ const alfajoresItem = ({ item, index }: Props) => {
           {item.name}
         </h2>
         <p
-          className="lg:text-lg leading-5 lg:leading-6"
+          className="text-sm lg:text-lg leading-5 lg:leading-6"
           dangerouslySetInnerHTML={{ __html: item.description }}
         />
         <div className="flex items-center gap-x-2 mt-2">
           <div
-            className={`font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center border border-white "`}
+            className="font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center border border-white"
             style={{ backgroundColor: item.bgColor }}
           >
             <span>{item.weight}</span>

@@ -40,7 +40,7 @@ const footer = () => {
         </div>
       </div>
 
-      <div className="w-full px-4 pb-16 lg:pb-24 bg-brown flex justify-center">
+      <div className="w-full px-4 pb-16 pt-8 lg:pt-0 lg:pb-24 bg-brown flex justify-center">
         <img src="/assets/logo.svg" alt="Logo" className="w-50 lg:w-70" />
       </div>
       <div className="py-10 bg-browndark px-4">

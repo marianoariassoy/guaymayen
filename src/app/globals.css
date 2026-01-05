@@ -2,6 +2,7 @@
 
 :root {
   --foreground: #140d09;
+  --tets: rgb(243, 215, 151);
 }
 
 @theme {
@@ -17,9 +18,10 @@
   --color-blue: #6aaee7;
   --color-green: #52b07b;
   --color-gold: #d6b598;
+  --color-gold-2: #f3d797;
   --color-brown: #ac702d;
   --color-browndark: #9a5100;
-  --color-browndark2: #36100a;
+  --color-browndark2: #35120e;
   --color-lightwhite: #fff6ed;
 }
 
@@ -37,9 +39,22 @@ body {
   left: 50%;
   bottom: -20px;
   transform: translateX(-50%);
-  width: 120%;
+  width: 90%;
   height: 18px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(18px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.shadow-fake-2 {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.8);
   filter: blur(18px);
   border-radius: 50%;
   z-index: 0;

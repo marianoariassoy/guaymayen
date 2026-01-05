@@ -28,7 +28,7 @@ const hero = () => {
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/60 to-transparent h-50 w-full z-20" />
 
       <div className="slide-container">
-        <Slide autoplay={true} duration={4000} transitionDuration={500}>
+        <Slide autoplay={true} duration={5000} transitionDuration={500}>
           {slideImages.map((slideImage, index) => (
             <div key={index} className="h-screen w-screen">
               <div
@@ -52,7 +52,7 @@ const hero = () => {
         </Slide>
       </div>
 
-      <div className="absolute -bottom-14 left-0 w-full overflow-hidden leading-none text-white">
+      <div className="absolute bottom-0 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-full float-left"

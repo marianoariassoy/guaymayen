@@ -47,7 +47,7 @@ const header = () => {
                 src="assets/logo.svg"
                 alt="logo"
                 className={`${
-                  scrolled ? "w-48 lg:w-54" : "w-50 lg:w-70"
+                  scrolled ? "w-48 lg:w-54" : "w-52 lg:w-70"
                 } h-auto transition-all duration-300 hover:-rotate-4`}
               />
             </button>
