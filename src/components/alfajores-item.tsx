@@ -26,7 +26,8 @@ const alfajoresItem = ({ item, index }: Props) => {
       }
       className={`flex items-center gap-x-6 lg:gap-x-16 cursor-pointer rounded-4xl hover:[&>div>.img-alfajor>img]:-rotate-4 
          hover:[&>div>div>.triple-sticker]:scale-110  
-         transition-all hover:bg-[var(--hover-bg)]
+          hover:[&>div>div>.heart]:border-white  
+         transition-all hover:bg-[var(--hover-bg)] hover:text-white
       ${index % 2 === 0 ? "" : "flex-row-reverse"} `}
     >
       <div
@@ -68,12 +69,12 @@ const alfajoresItem = ({ item, index }: Props) => {
         />
         <div className="flex items-center gap-x-2 mt-2">
           <div
-            className={`font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center "`}
+            className={`font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center border border-white "`}
             style={{ backgroundColor: item.bgColor }}
           >
             <span>{item.weight}</span>
           </div>
-          <span className="w-10 h-10 border border-foreground rounded-full flex items-center justify-center">
+          <span className="w-10 h-10 border border-foreground rounded-full flex items-center justify-center heart">
             <button
               className={`cursor-pointer ${
                 open ? "text-red-600" : "hover:text-red-600"

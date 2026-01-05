@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --foreground: #24170f;
+  --foreground: #140d09;
 }
 
 @theme {
@@ -47,4 +47,35 @@ body {
 
 strong {
   font-weight: 600;
+}
+
+@layer utilities {
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-wave {
+    animation: wave 18s linear infinite;
+  }
 }

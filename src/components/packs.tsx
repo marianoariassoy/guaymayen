@@ -39,8 +39,13 @@ const packs = () => {
         <div className="flex gap-y-8 gap-x-8 lg:gap-x-12 lg:w-1/2 w-full overflow-x-auto lg:overflow-visible pb-4 px-4">
           {alfajoresPacks.map((item, index) => (
             <article className="flex flex-col gap-y-8 min-w-30" key={index}>
-              <div className="relative">
-                <img src={item.image} alt={item.name} className="w-full" />
+              <div className="relative ">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full animate-float"
+                  style={{ animationDelay: `${index * 1.5}s` }}
+                />
                 <div className="shadow-fake" style={{ bottom: "-35px" }} />
               </div>
               <div className="z-20">
