@@ -43,7 +43,7 @@ const packs = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full animate-float"
+                  className="w-full animate-float hover:scale-105 transition-all cursor-pointer"
                   style={{ animationDelay: `${index * 1.5}s` }}
                 />
                 <div className="shadow-fake" style={{ bottom: "-35px" }} />

@@ -14,7 +14,7 @@ const SocialMedia = ({ size }: { size: "sm" | "lg" }) => {
               "--hover-color": item.color,
             } as React.CSSProperties
           }
-          className={`flex items-center justify-center rounded-full bg-foreground text-white  transition-all hover:shadow-xl hover:bg-[var(--hover-color)] ${
+          className={`flex items-center justify-center rounded-full bg-foreground text-white transition-all hover:bg-[var(--hover-color)] ${
             size === "sm"
               ? "w-10 h-10"
               : "w-12 lg:w-14 h-12 lg:h-14 text-xl lg:text-2xl"

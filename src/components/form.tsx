@@ -63,7 +63,7 @@ const Page = () => {
 
   return (
     <section>
-      <h3 className="font-display text-browndark2 tracking-widest text-center lg:text-xl font-bold mb-8">
+      <h3 className="text-browndark2 tracking-widest text-center lg:text-lg font-semibold mb-8">
         CONTACTATE CON NOSOTROS
       </h3>
 

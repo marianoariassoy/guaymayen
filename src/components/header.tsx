@@ -48,7 +48,7 @@ const header = () => {
                 alt="logo"
                 className={`${
                   scrolled ? "w-48 lg:w-54" : "w-52 lg:w-70"
-                } h-auto transition-all duration-300 hover:-rotate-4`}
+                } h-auto transition-all duration-300 hover:scale-105`}
               />
             </button>
           </div>

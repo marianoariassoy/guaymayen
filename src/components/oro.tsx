@@ -7,6 +7,10 @@ const oro = () => {
 
   return (
     <section className="relative">
+      {/* <span className="absolute top-20  right-12 z-30">
+        <img src="/assets/misc.svg" className="w-40 lg:w-80" alt="Misc" />
+      </span> */}
+
       <div
         className="absolute left-0 top-1/2 -translate-x-100 -translate-y-1/2 w-full h-full rounded-full blur-[120px] z-10"
         style={{
@@ -58,18 +62,18 @@ const oro = () => {
               <img
                 src="/images/alfajores/oro.png"
                 alt="Alfajore Oro"
-                className="w-full transition-all animate-float"
+                className="w-full transition-all animate-float hover:-rotate-4 cursor-pointer hover:scale-105"
               />
             </div>
             <div className="shadow-fake-2" />
           </div>
           <div className="w-1/2 flex flex-col z-30">
-            <h3 className="font-display lg:text-3xl font-bold lg:mb-6">
+            <h2 className="font-display lg:text-3xl font-bold lg:mb-6">
               La joya de la corona.
-            </h3>
-            <h2 className="font-display text-3xl lg:text-6xl font-black text-gold-2">
-              De Oro
             </h2>
+            <h1 className="font-display text-3xl lg:text-6xl font-black text-gold-2">
+              De Oro
+            </h1>
             <p className="text-sm lg:text-lg leading-5 lg:leading-6">
               Cobertura intensa y un interior superabundante. <br />
               <strong>El alfajor que subió la apuesta.</strong>

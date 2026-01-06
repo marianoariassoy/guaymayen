@@ -40,16 +40,16 @@ const footer = () => {
         </div>
       </div>
 
-      <div className="w-full px-4 pb-16 pt-8 lg:pt-0 lg:pb-24 bg-brown flex justify-center">
+      <div className="w-full px-4 pb-16 pt-8 lg:pt-0 lg:pb-22 bg-brown flex justify-center">
         <img src="/assets/logo.svg" alt="Logo" className="w-50 lg:w-70" />
       </div>
-      <div className="py-10 bg-browndark px-4">
+      <div className="py-6 lg:py-10 bg-browndark px-4">
         <nav>
           <ul className="flex items-center flex-wrap justify-center gap-2 text-white text-sm lg:text-xl font-bold font-display">
             {nav.slice(0, 3).map((item) => (
               <li key={item.name}>
                 <button
-                  className="px-4 py-4 rounded-2xl hover:bg-brown transition-colors cursor-pointer"
+                  className="px-4 py-4 rounded-2xl hover:bg-brown transition-colors cursor-pointer hover:shadow"
                   onClick={() => handleScroll(item.target)}
                 >
                   {item.name}
@@ -62,7 +62,7 @@ const footer = () => {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-4 py-4 rounded-2xl hover:bg-brown transition-colors cursor-pointer"
+                  className="px-4 py-4 rounded-2xl hover:bg-brown transition-colors cursor-pointer hover:shadow"
                 >
                   {item.name}
                 </a>
@@ -71,7 +71,7 @@ const footer = () => {
           </ul>
         </nav>
       </div>
-      <div className="p-4 text-center text-white bg-browndark2 text-sm lg:text-base">
+      <div className="px-4 py-6 text-center text-white bg-browndark2 text-sm lg:text-base">
         © 2025 Guaymallén. Todos los derechos reservados. Términos y
         Condiciones. Política de Privacidad.
       </div>

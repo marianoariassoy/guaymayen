@@ -7,17 +7,17 @@ const oro = () => {
 
   return (
     <section className="relative">
-      <div className="pointer-events-none absolute left-0 bottom-0 bg-linear-to-b from-transparent to-black/30 h-70 w-full" />
+      <div className="pointer-events-none absolute left-0 bottom-0 bg-linear-to-b from-transparent to-[#969b9e] h-70 w-full" />
 
       <div className="w-full px-4 py-16">
         <div className="w-full max-w-6xl m-auto flex gap-x-4 lg:gap-x-12">
           <div className="w-1/2 flex flex-col z-30">
-            <h3 className="font-display lg:text-3xl font-bold lg:mb-6">
+            <h2 className="font-display lg:text-3xl font-bold lg:mb-6">
               El lujo que te merecés.
-            </h3>
-            <h2 className="font-display text-3xl lg:text-6xl font-black">
-              Platino
             </h2>
+            <h1 className="font-display text-3xl lg:text-6xl font-black">
+              Platino
+            </h1>
             <p className="text-sm lg:text-lg leading-5 lg:leading-6">
               Presentación elegante y sabor que enamora. <br />
               <strong>Te cruzás un Platino, es un buen día.</strong>
@@ -43,7 +43,7 @@ const oro = () => {
               <img
                 src="/images/alfajores/platino.png"
                 alt="Alfajor Platino"
-                className="w-full transition-all animate-float"
+                className="w-full transition-all animate-float hover:rotate-4 hover:scale-105 cursor-pointer"
               />
             </div>
             <div className="shadow-fake-2" />
