@@ -26,7 +26,7 @@ const header = () => {
     <>
       <header
         className={`fixed w-full top-0 z-50 px-4 lg:px-8 pb-4 transition-all ${
-          scrolled ? "pt-4 bg-lightgreen shadow" : "pt-12"
+          scrolled ? "pt-4 bg-lightwhite/90 shadow" : "pt-12"
         }`}
       >
         <div className="w-full flex items-center justify-between">

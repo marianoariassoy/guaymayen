@@ -28,7 +28,12 @@ const hero = () => {
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/60 to-transparent h-50 w-full z-20" />
 
       <div className="slide-container">
-        <Slide autoplay={true} duration={5000} transitionDuration={500}>
+        <Slide
+          autoplay={true}
+          duration={5000}
+          infinite={true}
+          transitionDuration={500}
+        >
           {slideImages.map((slideImage, index) => (
             <div key={index} className="h-screen w-screen">
               <div
@@ -66,25 +71,6 @@ const hero = () => {
             fill="currentColor"
           ></path>
         </svg>
-
-        {/* <svg
-          viewBox="0 0 1200 140"
-          preserveAspectRatio="none"
-          className="block w-full h-30"
-        >
-          <path
-            d="
-        M0,60
-        C 150,-10 300,130 450,60
-        C 600,-10 750,130 900,60
-        C 1050,-10 1150,130 1200,60
-        L1200,140
-        L0,140
-        Z
-      "
-            fill="#ffffff"
-          />
-        </svg> */}
       </div>
 
       <div className="absolute right-0 lg:right-12 bottom-20 lg:bottom-30 z-30">
