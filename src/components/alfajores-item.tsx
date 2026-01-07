@@ -1,6 +1,7 @@
 "use client";
 import { Heart } from "@/lib/icons";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 interface Props {
   item: {
@@ -17,6 +18,15 @@ interface Props {
 const alfajoresItem = ({ item, index }: Props) => {
   const [open, setOpen] = useState(false);
 
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+
   return (
     <article
       style={
@@ -26,14 +36,15 @@ const alfajoresItem = ({ item, index }: Props) => {
       }
       className={`flex items-center gap-x-6 lg:gap-x-16 cursor-pointer rounded-4xl hover:[&>div>.img-alfajor>img]:-rotate-4 
          hover:[&>div>div>.triple-sticker]:scale-110  
-          hover:[&>div>div>.heart]:border-white  
-         transition-all hover:bg-[var(--hover-bg)] hover:text-white
+          hover:[&>div>div>.weight]:border-foreground  
+         transition-all hover:bg-[var(--hover-bg)] 
       ${index % 2 === 0 ? "" : "flex-row-reverse"} `}
     >
       <div
-        className={`w-2/5 -mt-12 relative inline-block ${
+        className={`w-2/5 -mt-12 relative inline-block opacity-0 ${
           index % 2 === 0 ? "-ml-8" : ""
-        } lg:ml-0 lg:mr-0`}
+        } ${inView ? "animate-fade-up" : ""} lg:ml-0 lg:mr-0`}
+        ref={ref}
       >
         <div className="relative img-alfajor">
           {item.triple && (
@@ -59,7 +70,16 @@ const alfajoresItem = ({ item, index }: Props) => {
         </div>
         <div className="shadow-fake" />
       </div>
-      <div className="flex flex-col gap-y-2 w-1/2">
+      <div
+        className={`flex flex-col gap-y-2 w-1/2 opacity-0 ${
+          inView
+            ? index % 2 === 0
+              ? "animate-fade-left"
+              : "animate-fade-right"
+            : null
+        }`}
+        ref={ref2}
+      >
         <h2 className="font-display text-3xl leading-6 lg:leading-12 lg:text-6xl font-black z-20">
           {item.name}
         </h2>
@@ -69,7 +89,7 @@ const alfajoresItem = ({ item, index }: Props) => {
         />
         <div className="flex items-center gap-x-2 mt-2">
           <div
-            className="font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center border border-white"
+            className="font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center border border-white weight transition-all"
             style={{ backgroundColor: item.bgColor }}
           >
             <span>{item.weight}</span>

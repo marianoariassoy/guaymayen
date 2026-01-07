@@ -1,16 +1,22 @@
 "use client";
 import { Heart } from "@/lib/icons";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const oro = () => {
   const [open, setOpen] = useState(false);
 
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+
   return (
     <section className="relative">
-      {/* <span className="absolute top-20  right-12 z-30">
-        <img src="/assets/misc.svg" className="w-40 lg:w-80" alt="Misc" />
-      </span> */}
-
       <div
         className="absolute left-0 top-1/2 -translate-x-100 -translate-y-1/2 w-full h-full rounded-full blur-[120px] z-10"
         style={{
@@ -57,7 +63,12 @@ const oro = () => {
       </div>
       <div className="w-full px-4 bg-browndark2 py-6 lg:py-0">
         <div className="w-full max-w-6xl m-auto text-white flex items-center gap-x-6 lg:gap-x-16 relative">
-          <div className="w-1/2 lg:w-2/5 z-30 relative">
+          <div
+            className={`w-1/2 lg:w-2/5 z-30 opacity-0 relative ${
+              inView ? "animate-fade-up" : ""
+            }`}
+            ref={ref}
+          >
             <div className="px-4 pb-8">
               <img
                 src="/images/alfajores/oro.png"
@@ -67,7 +78,12 @@ const oro = () => {
             </div>
             <div className="shadow-fake-2" />
           </div>
-          <div className="w-1/2 flex flex-col z-30">
+          <div
+            className={`w-1/2 flex flex-col z-30 opacity-0 relative ${
+              inView ? "animate-fade-left" : ""
+            }`}
+            ref={ref2}
+          >
             <h2 className="font-display lg:text-3xl font-bold lg:mb-6">
               La joya de la corona.
             </h2>

@@ -3,11 +3,8 @@ import PercentRing from "@/components/percent";
 const HistoriaItem1 = () => {
   return (
     <article className="w-full py-16 bg-linear-to-b from-black from-0% via-browndark2 via-30% to-browndark2 to-100% text-white px-4 relative">
-      <div className="absolute left-4 top-12 mx-auto animate-float">
-        <img src="/assets/choco-24.svg" alt="Chocolates" />
-      </div>
-      <div className="absolute right-4 top-12 mx-auto animate-float">
-        <img src="/assets/choco-22.svg" alt="Chocolates" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 lg:w-300 mx-auto animate-float -scale-x-100">
+        <img src="/assets/choco-21.svg" className="w-full" alt="Chocolates" />
       </div>
 
       <div className="w-full max-w-5xl m-auto flex flex-col gap-y-4 lg:gap-y-16 px-4">

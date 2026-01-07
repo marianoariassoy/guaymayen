@@ -1,9 +1,19 @@
 "use client";
 import { Heart } from "@/lib/icons";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const oro = () => {
   const [open, setOpen] = useState(false);
+
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
 
   return (
     <section className="relative">
@@ -11,7 +21,12 @@ const oro = () => {
 
       <div className="w-full px-4 py-16">
         <div className="w-full max-w-6xl m-auto flex gap-x-4 lg:gap-x-12">
-          <div className="w-1/2 flex flex-col z-30">
+          <div
+            className={`w-1/2 flex flex-col z-30 opacity-0 relative ${
+              inView ? "animate-fade-right" : ""
+            }`}
+            ref={ref}
+          >
             <h2 className="font-display lg:text-3xl font-bold lg:mb-6">
               El lujo que te merecés.
             </h2>
@@ -38,7 +53,12 @@ const oro = () => {
               </span>
             </div>
           </div>
-          <div className="w-1/2 lg:w-2/5 z-30 relative">
+          <div
+            className={`w-1/2 lg:w-2/5 z-30 opacity-0 relative ${
+              inView ? "animate-fade-up" : ""
+            }`}
+            ref={ref2}
+          >
             <div className="px-4 pb-8">
               <img
                 src="/images/alfajores/platino.png"

@@ -44,7 +44,7 @@ const hero = () => {
                 className="h-full px-4"
               >
                 <div className="flex flex-col gap-y-4 text-center max-w-4xl mx-auto">
-                  <span className="font-display text-white text-4xl lg:text-6xl font-black">
+                  <span className="font-display text-white text-4xl lg:text-6xl font-black animate-fade ">
                     {slideImage.title}
                   </span>
                   <span className="text-white font-bold text-xl lg:text-3xl">
@@ -73,7 +73,7 @@ const hero = () => {
         </svg>
       </div>
 
-      <div className="absolute right-0 lg:right-12 bottom-20 lg:bottom-30 z-30">
+      <div className="absolute right-0 lg:right-12 bottom-20 lg:bottom-30 z-30 animate-jump-in animate-delay-500">
         <img
           className="w-50 animate-spin [animation-duration:20s]"
           src="/assets/80anios.svg"

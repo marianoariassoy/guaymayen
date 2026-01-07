@@ -2,14 +2,29 @@
 import { Heart } from "@/lib/icons";
 import { useState } from "react";
 import { alfajoresPacks } from "@/lib/data";
+import { useInView } from "react-intersection-observer";
 
 const packs = () => {
   const [open, setOpen] = useState(false);
 
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+
   return (
     <section className="py-16 bg-gold" id="packs">
       <div className="w-full max-w-7xl m-auto flex flex-col lg:flex-row gap-8">
-        <div className="flex flex-col lg:gap-y-2 lg:w-1/2 px-4">
+        <div
+          className={`flex flex-col lg:gap-y-2 lg:w-1/2 px-4 opacity-0 ${
+            inView ? "animate-fade-right" : ""
+          }`}
+          ref={ref}
+        >
           <h1 className="font-display text-3xl lg:text-6xl font-black font-browndark2">
             Guaymapacks por 6 unidades
           </h1>
@@ -36,7 +51,12 @@ const packs = () => {
             </span>
           </div>
         </div>
-        <div className="flex gap-y-8 gap-x-8 lg:gap-x-12 lg:w-1/2 w-full overflow-x-auto lg:overflow-visible pb-4 px-4">
+        <div
+          className={`flex gap-y-8 gap-x-8 lg:gap-x-12 lg:w-1/2 w-full overflow-x-auto lg:overflow-visible pb-4 px-4 opacity-0 ${
+            inView ? "animate-fade-up" : ""
+          }`}
+          ref={ref2}
+        >
           {alfajoresPacks.map((item, index) => (
             <article className="flex flex-col gap-y-8 min-w-30" key={index}>
               <div className="relative ">

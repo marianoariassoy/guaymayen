@@ -1,6 +1,13 @@
+"use client";
 import { Star } from "@/lib/icons";
+import { useInView } from "react-intersection-observer";
 
 const nuevo = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
+
   return (
     <section
       className="lg:h-screen flex justify-center items-center bg-top bg-cover relative"
@@ -23,7 +30,12 @@ const nuevo = () => {
         <img src="/assets/choco-3.svg" className="w-full " alt="Chocolates 3" />
       </div>
 
-      <div className="p-4 max-w-xl flex flex-col gap-y-4 lg:gap-y-10 text-center py-30 z-40">
+      <div
+        className={`p-4 max-w-xl flex flex-col gap-y-4 lg:gap-y-10 text-center py-30 z-40 opacity-0 ${
+          inView ? "animate-fade-up" : ""
+        }`}
+        ref={ref}
+      >
         <h1 className="text-white text-3xl lg:text-6xl font-black font-display">
           Algo nuevo
           <br />
