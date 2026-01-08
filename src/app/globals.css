@@ -28,6 +28,16 @@
   --color-lightwhite: #fff6ed;
 }
 
+@layer utilities {
+  .font-sans {
+    font-family: var(--font-poppins);
+  }
+
+  .font-display {
+    font-family: var(--font-zain);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
