@@ -44,19 +44,18 @@ const hero = () => {
                 }}
                 className="h-full px-4"
               >
-                {index === 1 && (
-                  <div className="absolute left-0 top-0 bg-black/20 flex w-screen h-screen justify-center items-center">
-                    <PlayButton />
-                  </div>
-                )}
-
-                <div className="flex flex-col gap-y-4 text-center max-w-4xl mx-auto">
+                <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto">
                   <span className="font-display text-white text-4xl lg:text-6xl font-black animate-fade ">
                     {slideImage.title}
                   </span>
                   <span className="text-white font-bold text-xl lg:text-3xl">
                     {slideImage.subtitle}
                   </span>
+                  {index === 1 && (
+                    <div className="flex w-fill mt-2 justify-center items-center">
+                      <PlayButton />
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

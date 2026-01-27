@@ -15,7 +15,7 @@ const PlayButton: React.FC<PlayButtonProps> = ({
     <button
       onClick={onClick}
       aria-label="Play video"
-      className={`flex items-center justify-center rounded-full bg-black/70 hover:bg-black transition cursor-pointer ${className}`}
+      className={`flex items-center justify-center rounded-full bg-black/60 hover:bg-black transition cursor-pointer ${className}`}
       style={{ width: size, height: size }}
     >
       <svg
