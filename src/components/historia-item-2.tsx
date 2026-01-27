@@ -10,22 +10,24 @@ const HistoriaItem1 = () => {
       >
         <img src="/assets/choco-22.svg" className="w-full" alt="Chocolates" />
       </div>
-      <div className="absolute top-12 right-4 w-150 lg:w-200 mx-auto animate-float">
+      <div className="absolute top-12 right-4 w-150 lg:w-200 mx-auto animate-float hidden lg:block">
         <img src="/assets/choco-23.svg" className="w-full" alt="Chocolates" />
       </div>
 
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl m-auto flex flex-col bg-white/80 rounded-4xl p-8 lg:p-18 z-40 text-foreground text-center shadow-xl">
-        <h1 className="font-display text-lg lg:text-2xl leading-7 font-bold mb-4">
-          Así nació Guaymallén, un clásico popular que se ganó su lugar en
-          kioscos, mochilas, meriendas y viajes en bondi.
-        </h1>
-        <p className="text-lg lg:text-lg leading-5 lg:leading-6">
-          Hoy seguimos siendo una empresa 100% argentina y familiar, que se
-          mantiene firme incluso en los momentos difíciles del país. Con
-          tecnología moderna y un equipo enorme que deja todo cada día,
-          producimos millones de alfajores que llegan a cada rincón de
-          Argentina.
-        </p>
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl m-auto z-40 text-foreground text-center shadow-xl px-4">
+        <div className="bg-white/80 rounded-4xl p-8 lg:p-18 flex flex-col">
+          <h1 className="font-display text-xl lg:text-2xl leading-6 lg:leading-7 font-bold mb-4">
+            Así nació Guaymallén, un clásico popular que se ganó su lugar en
+            kioscos, mochilas, meriendas y viajes en bondi.
+          </h1>
+          <p className="lg:text-lg leading-5 lg:leading-6">
+            Hoy seguimos siendo una empresa 100% argentina y familiar, que se
+            mantiene firme incluso en los momentos difíciles del país. Con
+            tecnología moderna y un equipo enorme que deja todo cada día,
+            producimos millones de alfajores que llegan a cada rincón de
+            Argentina.
+          </p>
+        </div>
       </div>
     </article>
   );
