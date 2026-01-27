@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-55b614f8-83c0-4d85-a8be-6c3a354cabc7" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="343.9" height="100.5" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 343.9 100.5">
+  <defs>
+    <style>
+      .uuid-de1e65bc-ccb8-4855-9ba8-1552d2f4da40 {
+        fill: #572918;
+      }
+
+      .uuid-de1e65bc-ccb8-4855-9ba8-1552d2f4da40, .uuid-d939a1ee-d54f-458f-9182-14fc7f19135f, .uuid-c2980c35-7ecf-469a-a886-ea8d7fdd8de8, .uuid-d0e4f217-cd25-44ed-9391-5d9f25869764 {
+        fill-rule: evenodd;
+      }
+
+      .uuid-d939a1ee-d54f-458f-9182-14fc7f19135f {
+        fill: url(#uuid-677ce540-d92e-4fef-8b9f-7fa0ea37a413);
+      }
+
+      .uuid-c2980c35-7ecf-469a-a886-ea8d7fdd8de8 {
+        fill: #36110a;
+      }
+
+      .uuid-d0e4f217-cd25-44ed-9391-5d9f25869764 {
+        fill: url(#uuid-7463122a-5e52-4d37-a036-d8e39d5bffb6);
+      }
+    </style>
+    <linearGradient id="uuid-677ce540-d92e-4fef-8b9f-7fa0ea37a413" data-name="Degradado sin nombre 40" x1="165.6" y1="25.5" x2="221.7" y2="112.6" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#36100a"/>
+      <stop offset="1" stop-color="#884226"/>
+    </linearGradient>
+    <linearGradient id="uuid-7463122a-5e52-4d37-a036-d8e39d5bffb6" data-name="Degradado sin nombre 40" x1="58.5" y1="86.8" x2="258.4" y2="8.7" gradientTransform="translate(20.7 -6.7) rotate(3.7)" xlink:href="#uuid-677ce540-d92e-4fef-8b9f-7fa0ea37a413"/>
+  </defs>
+  <g id="uuid-5dedd106-1cc8-481c-a1e7-0dcff4640c03" data-name="Capa 1">
+    <g>
+      <path class="uuid-d939a1ee-d54f-458f-9182-14fc7f19135f" d="M182.2,61.7c3.5,60.5,47.3,38.1,33.8,13.9-6-10.8-23.2-18.8-33.8-13.9Z"/>
+      <g>
+        <path class="uuid-d0e4f217-cd25-44ed-9391-5d9f25869764" d="M292.6,0c-14.7,.9-33.2,15.3-49.3,27.3-18.3,13.6-39.2,12.5-64.9,15.7-39.4-5.8-71.2-.5-108.6,23.1-21,13.3-35.7,14.2-68.5,11.1-8.6-.8,26.4,35.6,88.6,10.6,57-22.9,45.7-33.2,88.5-40.4,3.3-.4,6.7-.6,10-.7,17.5-.6,33,3.9,47.5,5.4C310.2,60,329.2-2.1,292.6,0Z"/>
+        <path class="uuid-c2980c35-7ecf-469a-a886-ea8d7fdd8de8" d="M277.9,85.3c15.6,2.1,31,1.1,43.1-2.2,38.5-10.6,25.5-50.1-16.9-35-17,6.1-41.6,22.4-71.1,14.1-6.5-1.8-17.3-4.5-11.9-2,10.4,4.8,35.1,22.2,56.9,25.1Z"/>
+        <path class="uuid-de1e65bc-ccb8-4855-9ba8-1552d2f4da40" d="M197,25.4c5.9-38.2,32.4-21.3,22.3-6.8-4.5,6.5-15.9,10.5-22.3,6.8Z"/>
+        <path class="uuid-de1e65bc-ccb8-4855-9ba8-1552d2f4da40" d="M63.6,44.5c-25.1,13.1-26.6-9.9-13.7-10.2,5.8-.2,13.1,4.8,13.7,10.2Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

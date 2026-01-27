@@ -1,26 +1,153 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #140d09;
+  --tets: rgb(243, 215, 151);
 }
 
-@theme inline {
-  --color-background: var(--background);
+@theme {
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-zain);
+
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-secondary: #464340;
+  --color-yellow: #fdd213;
+  --color-cyan: #93d8e6;
+  --color-lightgreen: #b2dea1;
+  --color-pink: #fca594;
+  --color-pink-2: #ff9caf;
+  --color-blue: #6aaee7;
+  --color-green: #52b07b;
+  --color-gold: #d6b598;
+  --color-gold-2: #e8bf8d;
+  --color-brown: #ac702d;
+  --color-brown-2: #da7d33;
+  --color-browndark: #9a5100;
+  --color-browndark2: #35120e;
+  --color-lightwhite: #fff6ed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .font-sans {
+    font-family: var(--font-poppins);
+  }
+
+  .font-display {
+    font-family: var(--font-zain);
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+.shadow-fake {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(18px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.shadow-fake-2 {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.8);
+  filter: blur(18px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+@layer utilities {
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-wave {
+    animation: wave 18s linear infinite;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out both;
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-left {
+  animation: fade-left 0.5s ease-out both;
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-right {
+  animation: fade-right 0.5s ease-out both;
 }
