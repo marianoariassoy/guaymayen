@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "Alfajores Guaymallén",
   description:
     "Desde 1945, haciendo alfajores con el corazón. Nuestra historia empezó en 1945, cuando Ulpiano Fernández comenzó operando desde las instalaciones de una panadería alquilada y en 1972 ya contaba con una planta de 1200 mt2, 60 empleados y una producción de 180.000 alfajores diarios.",
+  icons: {
+    icon: "/assets/favicon.jpg",
+  },
 };
 
 export default function RootLayout({
