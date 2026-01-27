@@ -72,7 +72,7 @@ const footer = () => {
         </nav>
       </div>
       <div className="px-4 py-6 text-center text-white bg-browndark2 text-sm lg:text-base">
-        © 2025 Guaymallén. Todos los derechos reservados. Términos y
+        © 2026 Guaymallén. Todos los derechos reservados. Términos y
         Condiciones. Política de Privacidad.
       </div>
     </footer>

@@ -1,6 +1,7 @@
 "use client";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import PlayButton from "@/components/PlayButton";
 
 const hero = () => {
   const divStyle = {
@@ -35,7 +36,7 @@ const hero = () => {
           transitionDuration={500}
         >
           {slideImages.map((slideImage, index) => (
-            <div key={index} className="h-screen w-screen">
+            <div key={index} className="h-screen w-screen relative">
               <div
                 style={{
                   ...divStyle,
@@ -43,6 +44,12 @@ const hero = () => {
                 }}
                 className="h-full px-4"
               >
+                {index === 1 && (
+                  <div className="absolute left-0 top-0 bg-black/20 flex w-screen h-screen justify-center items-center">
+                    <PlayButton />
+                  </div>
+                )}
+
                 <div className="flex flex-col gap-y-4 text-center max-w-4xl mx-auto">
                   <span className="font-display text-white text-4xl lg:text-6xl font-black animate-fade ">
                     {slideImage.title}

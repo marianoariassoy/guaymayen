@@ -20,7 +20,12 @@ export const nav = [
     color: "rgb(178, 222, 161)",
   },
   { name: "Catálogo Productos", href: "#", target: "", color: "" },
-  { name: "Datos Logística", href: "#", target: "", color: "" },
+  {
+    name: "Datos Logística",
+    href: "/pdfs/Guaymallen-DatosLogistica.pdf",
+    target: "",
+    color: "",
+  },
 ];
 
 export const social = [
