@@ -33,10 +33,10 @@ const oro = () => {
       />
 
       <div className="w-full overflow-hidden">
-        <div className="relative w-[200%] animate-wave text-browndark2">
+        <div className="relative w-[200%] translate-y-1  animate-wave text-browndark2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-1/2 float-left"
+            className="w-1/2 float-left translate-x-1"
             viewBox="0 0 1442 151"
             fill="currentColor"
             stroke="currentColor"
@@ -113,7 +113,7 @@ const oro = () => {
         </div>
       </div>
       <div className="w-full overflow-hidden scale-x-[-1] scale-y-[-1]">
-        <div className="relative w-[200%] animate-wave text-browndark2 ">
+        <div className="relative w-[200%] translate-y-1 animate-wave text-browndark2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-1/2 float-left"
@@ -129,7 +129,7 @@ const oro = () => {
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-1/2 float-left"
+            className="w-1/2 float-left -translate-x-1"
             viewBox="0 0 1442 151"
             strokeWidth="2"
             stroke="currentColor"

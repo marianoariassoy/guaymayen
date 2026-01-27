@@ -11,7 +11,7 @@ const footer = () => {
   return (
     <footer>
       <div className="w-full overflow-hidden bg-lightwhite">
-        <div className="relative w-[200%] animate-wave text-brown">
+        <div className="relative w-[200%] translate-y-1 animate-wave text-brown">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-1/2 float-left"
@@ -27,7 +27,7 @@ const footer = () => {
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-1/2 float-left"
+            className="w-1/2 float-left -translate-x-1"
             viewBox="0 0 1442 151"
             strokeWidth="2"
             stroke="currentColor"

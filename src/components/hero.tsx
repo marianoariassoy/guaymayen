@@ -25,7 +25,7 @@ const hero = () => {
   ];
 
   return (
-    <section className="h-screen w-full" id="hero">
+    <section className="h-screen w-full overflow-hidden" id="hero">
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/60 to-transparent h-50 w-full z-20" />
 
       <div className="slide-container">
@@ -64,7 +64,7 @@ const hero = () => {
         </Slide>
       </div>
 
-      <div className="absolute bottom-0 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white">
+      <div className="absolute -bottom-2 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-full float-left"
