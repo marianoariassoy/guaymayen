@@ -32,8 +32,8 @@ const oro = () => {
         }}
       />
 
-      <div className="w-full overflow-hidden">
-        <div className="relative w-[200%] translate-y-1  animate-wave text-browndark2">
+      <div className="w-full overflow-hidden translate-y-1 ">
+        <div className="relative w-[200%] animate-wave text-browndark2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-1/2 float-left translate-x-1"
@@ -61,7 +61,7 @@ const oro = () => {
           </svg>
         </div>
       </div>
-      <div className="w-full px-4 bg-browndark2 py-6 lg:py-0">
+      <div className="w-full px-4 bg-browndark2 py-6 lg:py-0 z-30">
         <div className="w-full max-w-6xl m-auto text-white flex items-center gap-x-6 lg:gap-x-16 relative">
           <div
             className={`w-1/2 lg:w-2/5 z-30 opacity-0 relative ${
@@ -112,8 +112,8 @@ const oro = () => {
           </div>
         </div>
       </div>
-      <div className="w-full overflow-hidden scale-x-[-1] scale-y-[-1]">
-        <div className="relative w-[200%] translate-y-1 animate-wave text-browndark2 ">
+      <div className="w-full overflow-hidden -translate-y-1 scale-x-[-1] scale-y-[-1]">
+        <div className="relative w-[200%]  animate-wave text-browndark2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-1/2 float-left"

@@ -66,7 +66,7 @@ const hero = () => {
         </Slide>
       </div>
 
-      <div className="absolute -bottom-2 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white animate-fade-up">
+      <div className="hidden lg:block absolute -bottom-2 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white animate-fade-up">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-full float-left"
