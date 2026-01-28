@@ -36,13 +36,16 @@ const hero = () => {
           transitionDuration={500}
         >
           {slideImages.map((slideImage, index) => (
-            <div key={index} className="h-screen w-screen relative">
+            <div
+              key={index}
+              className="h-screen w-screen relative overflow-hidden"
+            >
               <div
                 style={{
                   ...divStyle,
                   backgroundImage: `url(${slideImage.url})`,
                 }}
-                className="h-full px-4 bg-center bg-cover bg-no-repeat"
+                className="h-full w-full px-4 bg-center bg-cover bg-no-repeat"
               >
                 <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto">
                   <span className="font-display text-white text-4xl lg:text-6xl font-black animate-fade ">
