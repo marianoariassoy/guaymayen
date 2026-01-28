@@ -9,9 +9,9 @@ const footer = () => {
   };
 
   return (
-    <footer>
+    <footer className="w-screen overflow-hidden">
       <div className="w-full overflow-hidden bg-lightwhite">
-        <div className="relative w-[200%] translate-y-1 animate-wave text-brown">
+        <div className="relative w-[200%] animate-wave translate-y-4  text-brown">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-1/2 float-left"

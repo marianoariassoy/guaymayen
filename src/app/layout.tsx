@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Zain, Poppins } from "next/font/google";
 import "./globals.css";
 import "./hamburguer.css";
+import "./animations.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 

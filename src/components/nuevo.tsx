@@ -10,7 +10,7 @@ const nuevo = () => {
 
   return (
     <section
-      className="lg:h-screen flex justify-center items-center bg-top bg-cover relative"
+      className="lg:h-screen flex justify-center items-center bg-top bg-cover relative overflow-hidden lg:overflow-auto"
       style={{ backgroundImage: "url(/assets/bg-nuevo.jpg)" }}
       id="nuevo"
     >

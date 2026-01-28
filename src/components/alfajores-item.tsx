@@ -37,12 +37,12 @@ const alfajoresItem = ({ item, index }: Props) => {
       className={`flex items-center gap-x-6 lg:gap-x-16 cursor-pointer rounded-4xl hover:[&>div>.img-alfajor>img]:-rotate-4 
          hover:[&>div>div>.triple-sticker]:scale-110  
           hover:[&>div>div>.weight]:border-foreground  
-         transition-all hover:bg-[var(--hover-bg)] 
+         transition-all lg:hover:bg-[var(--hover-bg)] 
       ${index % 2 === 0 ? "" : "flex-row-reverse"} `}
     >
       <div
         className={`w-2/5 -mt-12 relative inline-block opacity-0 ${
-          index % 2 === 0 ? "-ml-8" : ""
+          index % 2 === 0 ? "lg:-ml-8" : ""
         } ${inView ? "animate-fade-up" : ""} lg:ml-0 lg:mr-0`}
         ref={ref}
       >

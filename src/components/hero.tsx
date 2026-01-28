@@ -25,7 +25,7 @@ const hero = () => {
   ];
 
   return (
-    <section className="h-screen w-full overflow-hidden" id="hero">
+    <section className="h-screen w-screen overflow-hidden" id="hero">
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/60 to-transparent h-50 w-full z-20" />
 
       <div className="slide-container">
@@ -38,7 +38,7 @@ const hero = () => {
           {slideImages.map((slideImage, index) => (
             <div
               key={index}
-              className="h-screen w-screen relative overflow-hidden"
+              className="h-screen w-screen relative overflow-hidden fade-in"
             >
               <div
                 style={{
@@ -47,7 +47,7 @@ const hero = () => {
                 }}
                 className="h-full w-full px-4 bg-center bg-cover bg-no-repeat"
               >
-                <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto">
+                <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto fade-in delay-200">
                   <span className="font-display text-white text-4xl lg:text-6xl font-black animate-fade ">
                     {slideImage.title}
                   </span>
@@ -66,7 +66,7 @@ const hero = () => {
         </Slide>
       </div>
 
-      <div className="absolute -bottom-2 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white">
+      <div className="absolute -bottom-2 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white animate-fade-up">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-full float-left"
@@ -82,7 +82,7 @@ const hero = () => {
         </svg>
       </div>
 
-      <div className="absolute right-0 lg:right-12 bottom-20 lg:bottom-30 z-30 animate-jump-in animate-delay-500">
+      <div className="absolute right-0 lg:right-12 bottom-8 lg:bottom-20 z-30 animate-jump-in delay-400 overflow-hidden">
         <img
           className="w-50 animate-spin [animation-duration:20s]"
           src="/assets/80anios.svg"

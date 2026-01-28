@@ -1,6 +1,6 @@
 const HistoriaItem1 = () => {
   return (
-    <article className="w-full h-screen py-8 bg-linear-to-b from-black from-0% via-browndark2 via-30% to-browndark2 to-100% relative">
+    <article className="w-full lg:h-screen py-8 bg-linear-to-b from-black from-0% via-browndark2 via-30% to-browndark2 to-100% relative px-10 lg:px-0">
       <div className="absolute top-4 left-1/2 -translate-x-1/2 w-150 lg:w-300 mx-auto animate-float z-40">
         <img src="/assets/choco-20.svg" className="w-full" alt="Chocolates" />
       </div>
