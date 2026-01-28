@@ -1,5 +1,5 @@
 "use client";
-import { Slide } from "react-slideshow-image";
+import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import PlayButton from "@/components/PlayButton";
 
@@ -29,8 +29,9 @@ const hero = () => {
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/60 to-transparent h-50 w-full z-20" />
 
       <div className="slide-container">
-        <Slide
+        <Fade
           autoplay={true}
+          arrows={false}
           duration={5000}
           infinite={true}
           transitionDuration={500}
@@ -48,10 +49,10 @@ const hero = () => {
                 className="h-full w-full px-4 bg-center bg-cover bg-no-repeat"
               >
                 <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto fade-in delay-200">
-                  <span className="font-display text-white text-4xl lg:text-6xl font-black animate-fade ">
+                  <span className="font-display text-white text-3xl lg:text-6xl font-black animate-fade">
                     {slideImage.title}
                   </span>
-                  <span className="text-white font-bold text-xl lg:text-3xl">
+                  <span className="text-white font-bold text-lg lg:text-3xl">
                     {slideImage.subtitle}
                   </span>
                   {index === 1 && (
@@ -63,7 +64,7 @@ const hero = () => {
               </div>
             </div>
           ))}
-        </Slide>
+        </Fade>
       </div>
 
       <div className="hidden lg:block absolute -bottom-2 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white animate-fade-up">

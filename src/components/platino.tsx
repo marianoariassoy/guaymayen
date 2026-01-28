@@ -19,7 +19,7 @@ const oro = () => {
       <div className="pointer-events-none absolute left-0 bottom-0 bg-linear-to-b from-transparent to-[#969b9e] h-70 w-full" />
 
       <div className="w-full px-4 py-16">
-        <div className="w-full max-w-6xl m-auto flex gap-x-4 lg:gap-x-12">
+        <div className="w-full max-w-6xl m-auto items-center flex gap-x-4 lg:gap-x-12">
           <div
             className={`w-1/2 flex flex-col z-30 opacity-0 relative ${
               inView ? "animate-fade-right" : ""

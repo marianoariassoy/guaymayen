@@ -47,7 +47,7 @@ const packs = () => {
           </div>
         </div>
         <div
-          className={`grid grid-cols-3 gap-x-4 mt-4 lg:mt-0 lg:gap-x-12 w-full lg:w-1/2 pb-4 px-4 opacity-0 ${
+          className={`grid grid-cols-3  mt-4 lg:mt-0 gap-x-8 lg:gap-x-12 w-full lg:w-1/2 pb-4 px-4 opacity-0 ${
             inView ? "animate-fade-up" : ""
           }`}
         >
