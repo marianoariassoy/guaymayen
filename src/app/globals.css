@@ -8,7 +8,6 @@
 @theme {
   --font-sans: var(--font-poppins);
   --font-display: var(--font-zain);
-
   --color-foreground: var(--foreground);
   --color-secondary: #464340;
   --color-yellow: #fdd213;

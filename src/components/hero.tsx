@@ -42,7 +42,7 @@ const hero = () => {
                   ...divStyle,
                   backgroundImage: `url(${slideImage.url})`,
                 }}
-                className="h-full px-4"
+                className="h-full px-4 bg-center bg-cover bg-no-repeat"
               >
                 <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto">
                   <span className="font-display text-white text-4xl lg:text-6xl font-black animate-fade ">

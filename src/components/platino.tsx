@@ -5,7 +5,6 @@ import { useInView } from "react-intersection-observer";
 
 const oro = () => {
   const [open, setOpen] = useState(false);
-
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.3,
