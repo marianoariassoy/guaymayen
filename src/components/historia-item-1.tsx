@@ -28,7 +28,7 @@ const HistoriaItem1 = () => {
             <h2 className="font-display text-lg lg:text-3xl font-bold text-brown-2 leading-5 lg:leading-8">
               Desde 1945, haciendo alfajores con el corazón.
             </h2>
-            <p className="text-sm lg:text-lg leading-5 lg:leading-6">
+            <p className="text-sm lg:text-lg leading-5 lg:leading-6 mb-8">
               Nuestra historia empezó en 1945, cuando{" "}
               <strong>Ulpiano Fernández</strong> comenzó operando desde las
               instalaciones de una panadería alquilada y en 1972 ya contaba con

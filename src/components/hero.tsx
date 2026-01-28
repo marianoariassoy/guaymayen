@@ -67,7 +67,7 @@ const hero = () => {
         </Fade>
       </div>
 
-      <div className="hidden lg:block absolute -bottom-2 lg:-bottom-14 left-0 w-full overflow-hidden leading-none text-white animate-fade-up">
+      <div className="hidden lg:block absolute translate-y-14 bottom-0 left-0 w-full overflow-hidden leading-none text-white animate-fade-up z-30">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-full float-left"
@@ -85,7 +85,7 @@ const hero = () => {
 
       <div className="absolute right-0 lg:right-12 bottom-8 lg:bottom-20 z-30 animate-jump-in delay-400 overflow-hidden">
         <img
-          className="w-50 animate-spin [animation-duration:20s]"
+          className="w-40 lg:w-50 animate-spin [animation-duration:20s]"
           src="/assets/80anios.svg"
           alt="80 anios"
         />

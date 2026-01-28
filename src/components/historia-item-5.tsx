@@ -37,7 +37,7 @@ const HistoriaItem1 = () => {
           <div className="w-full lg:mt-30 max-w-2xl m-auto flex flex-col text-white text-center z-40 lg:text-xl">
             <div className="flex justify-center">
               <img
-                className="w-50 animate-spin [animation-duration:20s]"
+                className="w-40 lg:w-50 animate-spin [animation-duration:20s]"
                 src="/assets/80anios-2.svg"
                 alt="80 anios"
               />

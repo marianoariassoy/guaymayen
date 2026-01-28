@@ -15,7 +15,7 @@ interface Props {
 }
 const alfajores = ({ data, right }: Props) => {
   return (
-    <section className="py-20 px-4 scroll-mt-24" id="productos">
+    <section className="py-20 px-4 scroll-mt-20" id="productos">
       <div className="w-full max-w-7xl m-auto flex flex-col gap-y-12">
         {data.map((item, index) => (
           <AlfajoresItem item={item} index={index + right} key={index} />

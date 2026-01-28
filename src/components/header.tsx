@@ -27,7 +27,7 @@ const header = () => {
   return (
     <>
       <header
-        className={`fixed w-screen top-0 z-50 px-4 lg:px-8 pb-4 transition-all duration-500 ease-in-out animate-fade-down ${
+        className={`fixed w-screen top-0 z-50 px-4 lg:px-8 pb-4 transition-all ${
           scrolled ? "pt-4 bg-lightwhite/90 shadow" : "pt-12"
         }
       
@@ -51,7 +51,7 @@ const header = () => {
                 src="assets/logo.svg"
                 alt="logo"
                 className={`${
-                  scrolled ? "w-48 lg:w-54" : "w-52 lg:w-70"
+                  scrolled ? "w-48 lg:w-54" : "w-56 lg:w-70"
                 } h-auto transition-all duration-300 hover:scale-105`}
               />
             </button>
