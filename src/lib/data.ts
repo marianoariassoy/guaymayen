@@ -54,6 +54,7 @@ export const alfajoresSimples = [
     name: "Simple de chocolate",
     description:
       "El favorito del kiosquero. <br /> Simple, directo y con sabor a premio.",
+    presentation: "Caja por 40 unidades.",
     weight: "38 grs.",
     image: "./images/alfajores/simple-chocolate.png",
     bgColor: "rgb(253, 210, 19)",
@@ -63,6 +64,7 @@ export const alfajoresSimples = [
     name: "Simple de dulce de leche",
     description:
       "El clásico que nunca falla. Dos tapas, <strong>dulce de leche generoso.</strong> Sabor a infancia, a buen precio.",
+    presentation: "Caja por 40 unidades.",
     weight: "38 grs.",
     image: "./images/alfajores/simple-dulce-leche.png",
     bgColor: "rgb(147, 216, 230)",
@@ -72,6 +74,7 @@ export const alfajoresSimples = [
     name: "Simple de membrillo",
     description:
       "El toque diferente. Relleno de membrillo tradicional.<br/><strong>Un sabor bien argentino y casero.</strong>",
+    presentation: "Caja por 40 unidades.",
     weight: "38 grs.",
     image: "./images/alfajores/simple-membrillo.png",
     bgColor: "rgb(178, 222, 161)",
@@ -84,6 +87,7 @@ export const alfajoresTriples = [
     name: "Triple de chocolate",
     description:
       "El hermano mayor. Triple capa, doble relleno consistente.<br/><strong>Una sobredosis de felicidad permitida.</strong>",
+    presentation: "Caja por 24 unidades.",
     weight: "70 grs.",
     image: "./images/alfajores/triple-chocolate.png",
     bgColor: "rgb(252, 165, 148)",
@@ -93,6 +97,7 @@ export const alfajoresTriples = [
     name: "Triple de dulce de leche",
     description:
       "Acá no se mezquina! Tres tapas, doble relleno <strong>generoso. <br/>Caramento de energía para terminar el día.</strong>",
+    presentation: "Caja por 24 unidades.",
     weight: "70 grs.",
     image: "./images/alfajores/triple-dulce-leche.png",
     bgColor: "rgb(106, 174, 231)",
@@ -102,6 +107,7 @@ export const alfajoresTriples = [
     name: "Triple de membrillo",
     description:
       "Sabor tradicional de membrillo en formato extra grande. <strong>La excusa perfecta para darte un gran gusto.</strong>",
+    presentation: "Caja por 24 unidades.",
     weight: "70 grs.",
     image: "./images/alfajores/triple-membrillo.png",
     bgColor: "rgb(82, 176, 123)",

@@ -36,6 +36,9 @@ const oro = () => {
               Presentación elegante y sabor que enamora. <br />
               <strong>Te cruzás un Platino, es un buen día.</strong>
             </p>
+            <p className="text-sm lg:text-lg leading-5 lg:leading-6 mt-2">
+              <strong>Presentación:</strong> Caja por 24 unidades.
+            </p>
             <div className="flex items-center gap-x-2 mt-6 z-30">
               <div className="font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center border bg-foreground text-white">
                 <span>50 grs.</span>

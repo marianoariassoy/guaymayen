@@ -7,6 +7,7 @@ interface Props {
   item: {
     name: string;
     description: string;
+    presentation: string;
     weight: string;
     image: string;
     bgColor: string;
@@ -17,12 +18,7 @@ interface Props {
 
 const alfajoresItem = ({ item, index }: Props) => {
   const [open, setOpen] = useState(false);
-
   const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.3,
-  });
-  const [ref2, inView2] = useInView({
     triggerOnce: false,
     threshold: 0.3,
   });
@@ -32,12 +28,12 @@ const alfajoresItem = ({ item, index }: Props) => {
       style={
         {
           "--hover-bg": item.bgColor,
+          "--hover-bg-dark": `color-mix(in srgb, var(--hover-bg) 30%, var(--hover-bg) 10%)`,
         } as React.CSSProperties
       }
       className={`flex items-center gap-x-6 lg:gap-x-16 cursor-pointer rounded-4xl hover:[&>div>.img-alfajor>img]:-rotate-4 
          hover:[&>div>div>.triple-sticker]:scale-110  
-          hover:[&>div>div>.weight]:border-foreground  
-         transition-all lg:hover:bg-[var(--hover-bg)] 
+         transition-all lg:hover:bg-[var(--hover-bg-dark)] 
       ${index % 2 === 0 ? "" : "flex-row-reverse"} `}
     >
       <div
@@ -78,7 +74,6 @@ const alfajoresItem = ({ item, index }: Props) => {
               : "animate-fade-right"
             : null
         }`}
-        ref={ref2}
       >
         <h2 className="font-display text-3xl leading-6 lg:leading-12 lg:text-6xl font-black z-20">
           {item.name}
@@ -87,9 +82,13 @@ const alfajoresItem = ({ item, index }: Props) => {
           className="text-sm lg:text-lg leading-5 lg:leading-6"
           dangerouslySetInnerHTML={{ __html: item.description }}
         />
+        <p className="text-sm lg:text-lg leading-5 lg:leading-6 mt-2">
+          <strong>Presentación:</strong> {item.presentation}
+        </p>
+
         <div className="flex items-center gap-x-2 mt-2">
           <div
-            className="font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center border border-white weight transition-all"
+            className="font-display lg:text-xl font-extrabold rounded-full px-4 h-10 flex items-center justify-center  transition-all"
             style={{ backgroundColor: item.bgColor }}
           >
             <span>{item.weight}</span>
