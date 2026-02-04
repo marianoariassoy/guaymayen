@@ -3,6 +3,7 @@ import AlfajoresItem from "@/components/alfajores-item";
 interface Alfajores {
   name: string;
   description: string;
+  presentation: string;
   weight: string;
   image: string;
   bgColor: string;

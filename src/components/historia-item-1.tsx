@@ -7,7 +7,14 @@ const HistoriaItem1 = () => {
       <div className="absolute top-4 left-1/2 -translate-x-1/2 w-150 lg:w-300 mx-auto animate-float z-40">
         <img src="/assets/choco-21.svg" className="w-full" alt="Chocolates" />
       </div>
-      <div className="mb-16 flex justify-center mt-8">
+      <div className="mb-16 flex flex-col gap-y-4 items-center justify-center mt-8">
+        <div>
+          <img
+            src="/assets/bandera.png"
+            alt="Bandera"
+            className="h-20 animate-float-2"
+          />
+        </div>
         <div className="border border-white rounded-full px-8 lg:px-12 py-2 tracking-widest font-semibold lg:text-lg uppercase text-white inline-block mx-auto ">
           Nuestra Historia
         </div>

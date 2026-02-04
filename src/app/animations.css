@@ -115,6 +115,22 @@
   }
 }
 
+@layer utilities {
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+
+  .animate-float-2 {
+    animation: float 4s ease-in-out infinite;
+  }
+}
+
 @keyframes jump-in {
   0% {
     opacity: 0;
