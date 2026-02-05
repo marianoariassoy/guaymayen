@@ -2,6 +2,7 @@
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import PlayButton from "@/components/PlayButton";
+import { Forward, Back } from "@/lib/icons";
 
 const hero = () => {
   const divStyle = {
@@ -24,14 +25,31 @@ const hero = () => {
     },
   ];
 
+  const properties = {
+    prevArrow: (
+      <button
+        className="ml-4 lg:ml-10 border border-white text-white 
+        h-12 w-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center text-xl hover:border-white hover:text-white hover:scale-110 transition-all"
+      >
+        <Back />
+      </button>
+    ),
+    nextArrow: (
+      <button className="mr-4 lg:mr-10 border border-white text-white h-12 w-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center text-xl hover:border-white hover:text-white hover:scale-110 transition-all">
+        <Forward />
+      </button>
+    ),
+  };
+
   return (
     <section className="h-screen w-screen overflow-hidden" id="hero">
       <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-black/60 to-transparent h-50 w-full z-20" />
 
       <div className="slide-container">
         <Fade
+          {...properties}
           autoplay={true}
-          arrows={false}
+          arrows={true}
           duration={5000}
           infinite={true}
           transitionDuration={500}
@@ -48,7 +66,7 @@ const hero = () => {
                 }}
                 className="h-full w-full px-4 bg-center bg-cover bg-no-repeat"
               >
-                <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto fade-in delay-200">
+                <div className="flex flex-col gap-y-2 text-center max-w-4xl mx-auto fade-in delay-200 px-18">
                   <span className="font-display text-white text-3xl lg:text-6xl font-black animate-fade">
                     {slideImage.title}
                   </span>

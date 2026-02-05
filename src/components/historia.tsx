@@ -10,14 +10,14 @@ const historia = () => {
   const properties = {
     prevArrow: (
       <button
-        className="ml-2 lg:ml-10 border border-brown-2 text-brown-2 
-      h-10 w-10 lg:w-14 lg:h-14 rounded-full flex items-center justify-center text-xl hover:border-white hover:text-white hover:scale-110 transition-all"
+        className="ml-4 lg:ml-10 border border-brown-2 text-brown-2 
+      h-12 w-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center text-xl hover:border-white hover:text-white hover:scale-110 transition-all"
       >
         <Back />
       </button>
     ),
     nextArrow: (
-      <button className="mr-2 lg:mr-10 border border-brown-2 text-brown-2 h-10 w-10 lg:w-14 lg:h-14 rounded-full flex items-center justify-center text-xl hover:border-white hover:text-white hover:scale-110 transition-all">
+      <button className="mr-4 lg:mr-10 border border-brown-2 text-brown-2 h-12 w-12 lg:w-14 lg:h-14 rounded-full flex items-center justify-center text-xl hover:border-white hover:text-white hover:scale-110 transition-all">
         <Forward />
       </button>
     ),
