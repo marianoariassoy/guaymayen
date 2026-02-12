@@ -27,13 +27,18 @@ const Page = () => {
 
   const onSubmit: SubmitHandler<User> = async (data) => {
     setSending(true);
+    const sender = {
+      to: "info@alfajoresguaymallen.com.ar",
+      from: "no-reply@alfajoresguaymallen.com.ar",
+      from_name: "Alfajores Guaymallen",
+      subject: "Contacto",
+    };
 
     try {
-      const response = await axios.post("", data, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      const response = await axios.post(
+        "https://alfajoresguaymallen.com.ar/backend/send-email.php",
+        { ...data, ...sender },
+      );
       if (response?.data?.error) {
         setError(response.data.message);
         setSending(false);
@@ -56,8 +61,10 @@ const Page = () => {
 
   if (sended)
     return (
-      <div className="text-3xl text-center font-bold">
-        Tu mensaje fue enviado con éxito
+      <div className="flex justify-center">
+        <div className="text-xl lg:text-2xl text-center font-bold text-white rounded-full bg-browndark2 py-4 px-8 w-fit">
+          ¡El mensaje fue enviado con éxito!
+        </div>
       </div>
     );
 
@@ -106,9 +113,10 @@ const Page = () => {
           <textarea
             className="w-full h-30 rounded-2xl bg-white/70 px-6 py-4 focus:outline-none focus:ring-0 lg:text-xl font-display font-bold placeholder:text-secondary text-secondary mb-2"
             placeholder="Mensaje"
-            name="message"
             id="message"
+            {...register("message", { required: errorMessage })}
           ></textarea>
+          <Error error={errors.message} />
         </div>
         <div className="flex items-center justify-center">
           {sending ? <Loader /> : <Button>Enviar</Button>}
