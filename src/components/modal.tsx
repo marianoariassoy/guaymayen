@@ -10,7 +10,7 @@ const Modal = ({
       className="fixed inset-0 z-50 bg-black/50 backdrop-blur-lg flex items-center justify-center p-4 fade-in-fast"
       onClick={() => setOpenModal(false)}
     >
-      <div className="w-full max-w-5xl aspect-video shadow-2xl">
+      <div className="w-full max-w-5xl aspect-video shadow-2xl bg-black">
         <ReactPlayer
           src="https://www.youtube.com/watch?v=iBG1n1hZMPc"
           playing={true}

@@ -1,5 +1,5 @@
 "use client";
-import { nav } from "@/lib/data";
+import { nav, nav_footer } from "@/lib/data";
 
 const footer = () => {
   const handleScroll = (id: string) => {
@@ -45,24 +45,38 @@ const footer = () => {
       </div>
       <div className="py-6 lg:py-10 bg-browndark px-4">
         <nav>
-          <ul className="flex items-center flex-wrap justify-center gap-2 text-white text-sm lg:text-xl font-bold font-display">
+          <ul className="flex items-center flex-wrap justify-center gap-2 text-white lg:text-xl font-bold font-display ">
             {nav.slice(0, 3).map((item) => (
               <li key={item.name}>
                 <button
-                  className="px-4 py-4 rounded-2xl hover:bg-brown transition-colors cursor-pointer hover:shadow"
+                  className="px-2 lg:px-4 py-4 rounded-2xl hover:bg-brown transition-colors cursor-pointer hover:shadow"
                   onClick={() => handleScroll(item.target)}
                 >
                   {item.name}
                 </button>
               </li>
             ))}
-            {nav.slice(3, 5).map((item) => (
-              <li key={item.name}>
+            {nav.slice(3, 4).map((item) => (
+              <li key={item.name} className="mb-4 lg:mb-0">
                 <a
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
                   className="px-4 py-4 rounded-2xl hover:bg-brown transition-colors cursor-pointer hover:shadow"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <ul className="flex flex-col lg:flex-row items-center flex-wrap justify-center gap-2 lg:gap-8 my-4 text-sm lg:text-base">
+            {nav_footer.map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-2 rounded-2xl hover:bg-brown bg-browndark2 text-white transition-colors cursor-pointer hover:shadow font-semibold font-display block w-40 text-center"
                 >
                   {item.name}
                 </a>

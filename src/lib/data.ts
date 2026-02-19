@@ -19,12 +19,26 @@ export const nav = [
     target: "contacto",
     color: "rgb(178, 222, 161)",
   },
-  { name: "Catálogo Productos", href: "#", target: "", color: "" },
   {
     name: "Datos Logística",
     href: "/pdfs/Guaymallen-DatosLogistica.pdf",
     target: "",
     color: "",
+  },
+];
+
+export const nav_footer = [
+  {
+    name: "Envianos tu CV",
+    href: "mailto:RRHH@alfajoresguaymallen.com.ar",
+  },
+  {
+    name: "Proveedores",
+    href: "mailto:compras@alfajoresguaymallen.com.ar",
+  },
+  {
+    name: "Reclamos",
+    href: "http://wa.me/541122770599",
   },
 ];
 
