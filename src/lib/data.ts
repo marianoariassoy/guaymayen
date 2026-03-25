@@ -110,7 +110,7 @@ export const alfajoresTriples = [
   {
     name: "Triple de dulce de leche",
     description:
-      "Acá no se mezquina! Tres tapas, doble relleno <strong>generoso. <br/>Caramento de energía para terminar el día.</strong>",
+      "Acá no se mezquina! Tres tapas, doble relleno <strong>generoso. <br/>Cargamento de energía para terminar el día.</strong>",
     presentation: "Caja por 24 unidades.",
     weight: "70 grs.",
     image: "./images/alfajores/triple-dulce-leche.png",
